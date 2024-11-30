@@ -90,3 +90,63 @@
     margin-left: 20px;
     margin-bottom: 0px;
 }
+/*-------------------------Our-journey--------------------------*/
+#myjheading{
+    text-align: center;
+}
+.myjcontainer{
+    border-radius: 8px;
+    border: 3px solid rgb(38, 38, 14);
+    padding: 20px;
+}
+.myjdropdown {
+    position: relative;
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.myjdropdown-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.myjdropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    right: 0;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.myjdropdown-menu li {
+    padding: 8px;
+    text-align: left;
+}
+.myjdropdown-menu li:hover {
+    background-color: #ddd;
+}
+.myjdropdown-menu li a {
+    text-decoration: none;
+    color: black;
+}
+.myjdropdown-menu li a:hover::before {
+    content: ">>";
+    opacity: 1;
+    left: -10px;
+}
+
+/*--------------------End-Our-Journey---------------------*/

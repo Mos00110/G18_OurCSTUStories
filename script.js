@@ -13,3 +13,7 @@ function myFunction() {
       }
     }
   }
+function toggleDropdown() {
+  const menu = document.querySelector(".myjdropdown-menu");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}

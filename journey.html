@@ -8,10 +8,17 @@
     </head>
     <body>
        <section id="journey-highlights">
-           <h1>Our Journey Highlights</h1>
-           <p>เรื่องราวตลอด 4 ปีใน CSTU</p>
+           <h1 id="myjheading">Our Journey Highlights</h1>
+           <p id="myjheading">เรื่องราวตลอด 4 ปีใน CSTU</p>
+           <div class="myjdropdown">
+            <button class="myjdropdown-btn" onclick="toggleDropdown()">☰</button>
+            <ul class="myjdropdown-menu">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="future.html">Our Future</a></li>
+            </ul>
+        </div>
            
-           <div>
+           <div class="myjcontainer">
              <div>
                <h2>Year 1</h2>
                <p>เริ่มต้นเรียนรู้สิ่งใหม่</p>
@@ -83,6 +90,7 @@
              
            </div>
          </section>
+         <script src="script.js"></script>
     </body>
     </html>
     
