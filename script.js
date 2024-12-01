@@ -21,7 +21,8 @@ function toggleDropdown() {
 
 const images = [
     'resourse/IMG1.jpg',
-    'resourse/IMG2.jpg'
+    'resourse/IMG2.jpg',
+    'resourse/IMG3.jpg'
 ];
 let currentIndex = 0;
 function changeNextImage() {
