@@ -118,13 +118,42 @@
     display: flex;
     align-items: center;
     text-align: center;
-    font-size: 30px;
     background-color: #E38E49;
     width: 100%;
     height: 601px;
 }
 .quote{
+    font-size: 40px;
+    line-height: 60px;
     font-family: "Bai Jamjuree", sans-serif;
+}
+#carouselImage{
+    width: 800px;
+    height: 601px;
+    transition: opacity 1s ease-in-out;
+}
+.before-btn{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 40px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.next-btn{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 40px;
+    margin-left: 750px;
+    background-color: transparent;
+    color:  white;
+    border: none;
+    cursor: pointer;
 }
 /*-------------------------End-index--------------------------*/
 /*-------------------------Our-journey--------------------------*/

@@ -13,7 +13,37 @@ function myFunction() {
       }
     }
   }
+
 function toggleDropdown() {
   const menu = document.querySelector(".myjdropdown-menu");
   menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+
+const images = [
+    'resourse/IMG1.jpg',
+    'resourse/IMG2.jpg'
+];
+let currentIndex = 0;
+function changeNextImage() {
+    const image = document.getElementById('carouselImage');
+    image.style.opacity = 0;
+
+    setTimeout(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        image.src = images[currentIndex];
+
+        image.style.opacity = 1;
+    }, 750);
+}
+
+function changePreviousImage() {
+    const image = document.getElementById('carouselImage');
+    image.style.opacity = 0;
+
+    setTimeout(() => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        image.src = images[currentIndex];
+
+        image.style.opacity = 1;
+    }, 750);
 }
