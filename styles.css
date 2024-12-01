@@ -4,14 +4,6 @@
     padding: 0;
 }
 /*-------------------------Our-index--------------------------*/
-#profile-img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 .dropdown {
     position: absolute;
     display: inline-block;
@@ -158,6 +150,8 @@
 .allpeople{
     text-align: center;
     margin-top: 50px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .twopeople1{
     display: flex;
@@ -171,14 +165,67 @@
     display: flex;
     justify-content: center;
 }
-.textinprofile{
-    display: none;
+.profile-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+.textinprofileleft,.textinprofileright {
+    font-size: 20px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    line-height: 40px;
+}
+#profile-imgleft , #profile-imgright{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: transform 1s ease, opacity 1s ease;
 }
 .profile-MOS{
-    margin-right: 400px;
+    margin-right: 100px;
 }
-.profile-MOS:hover .textinprofile{
-    display: block;
+.profile-TONG{
+    margin-left: 100px;
+}
+.profile-KEAN{
+    margin-right: 100px;
+}
+.profile-DAN{
+    margin-left: 100px;
+}
+.profile-KAN{
+    margin-right: 100px;
+}
+.profile-ICE{
+    margin-left: 100px;
+}
+.profile-container:hover #profile-imgleft {
+    transform: scale(1.05);
+    transform: translateX(-250px);
+}
+.profile-container:hover .textinprofileleft {
+    opacity: 1;
+    transform: translate(-38%, -60%);
+}
+.profile-container:hover #profile-imgright {
+    transform: scale(1.05);
+    transform: translateX(250px);
+}
+.profile-container:hover .textinprofileright {
+    opacity: 1;
+    transform: translate(-62%, -60%);
 }
 /*-------------------------End-index--------------------------*/
 /*-------------------------Our-journey--------------------------*/
