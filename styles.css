@@ -4,10 +4,13 @@
     padding: 0;
 }
 /*-------------------------Our-index--------------------------*/
-.profile-img{
-    width: 400px;
+#profile-img{
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .dropdown {
     position: absolute;
@@ -106,9 +109,6 @@
     background-color: #1F509A;
     height: 40px;
 }
-.allpeople{
-    text-align: center;
-}
 .picandquacontainer{
     display: flex;
     justify-content: center;
@@ -154,6 +154,31 @@
     color:  white;
     border: none;
     cursor: pointer;
+}
+.allpeople{
+    text-align: center;
+    margin-top: 50px;
+}
+.twopeople1{
+    display: flex;
+    justify-content: center;
+}
+.twopeople2{
+    display: flex;
+    justify-content: center;
+}
+.twopeople3{
+    display: flex;
+    justify-content: center;
+}
+.textinprofile{
+    display: none;
+}
+.profile-MOS{
+    margin-right: 400px;
+}
+.profile-MOS:hover .textinprofile{
+    display: block;
 }
 /*-------------------------End-index--------------------------*/
 /*-------------------------Our-journey--------------------------*/
