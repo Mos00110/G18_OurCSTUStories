@@ -125,6 +125,7 @@
     text-decoration: none;
     font-weight: 700;
     margin-left: 60px;
+    cursor: default;
 }
 
 .picandquacontainer{
@@ -564,9 +565,6 @@ input[type="color"] {
         padding: 15px;
         background-color: #e0f7fa;
     }
-    body{
-        background-color: red;
-    }
     #profile-imgleft, #profile-imgright{
         width: 130px;
         height: 130px;
@@ -604,21 +602,71 @@ input[type="color"] {
         flex-direction: row;
         gap: 10px;
     }
+    .peopleforfuture1, .peopleforfuture2, .peopleforfuture3 {
+        display: flex
+    ;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        font-size: 18px;
+        width: 50%;
+        left: 0;
+        margin-left: 0px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+    .LEFTFUTURE,.RIGHTFUTURE{
+        font-size: 16px;
+    }
+    .myjcontainer {
+        font-size: 16px;
+    }
 }
 
 /* Responsive for Mobile: 360x640 */
 @media screen and (max-width: 640px) and (max-height: 800px) {
+    .myjcontainer {
+        font-size: 14px;
+    }
     .container {
         padding: 10px;
         background-color: #ffebee;
     }
-
+    #profile-imgleft, #profile-imgright{
+        width: 50px;
+        height: 50px;
+        transition: transform 1s ease, opacity 1s ease;
+    }
+    .profile-container:hover #profile-imgleft {
+        transform: scale(1.05);
+        transform: translateX(-80px);
+        border: #f1f1f1 solid 5px;
+    }
+    .profile-container:hover .textinprofileleft {
+        opacity: 1;
+        transform: translate(-30%, -55%);
+        transition: opacity 1.5s ease;
+        font-size: 8px;
+    }
+    .profile-container:hover #profile-imgright {
+        transform: scale(1.05);
+        transform: translateX(80px);
+        border: #f1f1f1 solid 5px;
+    }
+    .profile-container:hover .textinprofileright {
+        opacity: 1;
+        transform: translate(-70%, -55%);
+        transition: opacity 1.5s ease;
+        font-size: 8px;
+    }
+    .topnav a {
+        margin-left: 110px;
+    }
     header {
         flex-direction: column;
         align-items: center;
         padding: 10px;
     }
-
     nav ul {
         flex-direction: column;
         gap: 5px;
@@ -633,4 +681,36 @@ input[type="color"] {
         height: auto;
     }
 }
-  
+/*tablet แนวนอน*/
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (min-height: 768px) and (max-height: 1024px) { 
+    .topnav a{
+        margin: 40px;
+    }
+    #profile-imgleft, #profile-imgright{
+        width: 180px;
+        height: 180px;
+        transition: transform 1s ease, opacity 1s ease;
+    }
+    .profile-container:hover #profile-imgleft {
+        transform: scale(1.05);
+        transform: translateX(-170px);
+        border: #f1f1f1 solid 5px;
+    }
+    .profile-container:hover .textinprofileleft {
+        opacity: 1;
+        transform: translate(-30%, -55%);
+        transition: opacity 1.5s ease;
+        font-size: 15px;
+    }
+    .profile-container:hover #profile-imgright {
+        transform: scale(1.05);
+        transform: translateX(170px);
+        border: #f1f1f1 solid 5px;
+    }
+    .profile-container:hover .textinprofileright {
+        opacity: 1;
+        transform: translate(-70%, -55%);
+        transition: opacity 1.5s ease;
+        font-size: 15px;
+    }
+}
