@@ -210,22 +210,10 @@
     margin-bottom: 50px;
     transition: transform 1s ease, opacity 1s ease;
 }
-.profile-MOS{
+.profile-MOS ,.profile-KEAN,.profile-KAN{
     margin-right: 100px;
 }
-.profile-TONG{
-    margin-left: 100px;
-}
-.profile-KEAN{
-    margin-right: 100px;
-}
-.profile-DAN{
-    margin-left: 100px;
-}
-.profile-KAN{
-    margin-right: 100px;
-}
-.profile-ICE{
+.profile-TONG,.profile-DAN,.profile-ICE{
     margin-left: 100px;
 }
 .profile-container:hover #profile-imgleft {
@@ -244,6 +232,27 @@
     opacity: 1;
     transform: translate(-62%, -60%);
 }
+.GUEST{
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+}
+form{
+    text-align: center;
+}
+#First-name{
+    margin-right: 15px;
+}
+#First-name-TEXT{
+    margin-right: 15px;
+}
+#Last-name{
+    margin-left: 15px;
+}
+#Last-name-TEXT{
+    margin-left: 15px;
+}
+
 /*-------------------------End-index--------------------------*/
 
 /*-------------------------Our-journey--------------------------*/
