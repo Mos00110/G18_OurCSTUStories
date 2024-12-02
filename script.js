@@ -54,25 +54,25 @@ const parallaxSection = document.getElementById('head-img');
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   const sectionHeight = parallaxSection.offsetHeight;
-  const blurValue = Math.min(scrollY / sectionHeight * 5, 5);
+  const blurValue = Math.min(scrollY / sectionHeight * 3, 3);
 
   if (scrollY < sectionHeight) {
-      parallaxSection.style.backgroundPositionY = `${scrollY * 0.5}px`;
+      parallaxSection.style.backgroundPositionY = `${scrollY * 5}px`;
       parallaxSection.style.filter = `blur(${blurValue}px)`;  
   } 
   else {
       parallaxSection.style.backgroundPositionY = '50%';
-      parallaxSection.style.filter = 'blur(5px)'; 
+      parallaxSection.style.filter = 'blur(3px)'; 
   }
 });
+
 function Submitfunction() {
-    const firstName = document.getElementById('First-name').value;
-    const lastName = document.getElementById('Last-name').value;
+    const Name = document.getElementById('Name').value;
     const comment = document.getElementById('Comment').value;
     const colorPicker = document.getElementById('colorPicker').value;
     const commentsContainer = document.getElementById('commentsContainer');
 
-    if (!firstName || !comment) {
+    if (!Name || !comment) {
         alert('กรุณากรอกข้อมูลให้ครบถ้วน!');
         return;
     }
@@ -81,15 +81,14 @@ function Submitfunction() {
     commentCard.classList.add('comment-card');
     commentCard.style.backgroundColor = colorPicker;
     commentCard.innerHTML = `
-        <p><strong>${firstName} ${lastName}</strong></p>
+        <p><strong>${Name}</strong></p>
         <p>${comment}</p>
     `;
 
     commentsContainer.appendChild(commentCard);
 
     // รีเซ็ตฟิลด์ข้อมูล
-    document.getElementById('First-name').value = '';
-    document.getElementById('Last-name').value = '';
+    document.getElementById('Name').value = '';
     document.getElementById('Comment').value = '';
     document.getElementById('colorPicker').value = '#ffffff'; // ตั้งค่า default
 }
