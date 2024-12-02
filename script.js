@@ -20,9 +20,9 @@ function toggleDropdown() {
 }
 
 const images = [
-    'resourse/IMG1.jpg',
-    'resourse/IMG2.jpg',
-    'resourse/IMG3.jpg'
+    'resourse/g18.png',
+    'resourse/IMG3.jpg',
+    'resourse/IMG4.png'
 ];
 let currentIndex = 0;
 function changeNextImage() {
@@ -48,3 +48,20 @@ function changePreviousImage() {
         image.style.opacity = 1;
     }, 750);
 }
+
+const parallaxSection = document.getElementById('head-img');
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  const sectionHeight = parallaxSection.offsetHeight;
+  const blurValue = Math.min(scrollY / sectionHeight * 5, 5);
+
+  if (scrollY < sectionHeight) {
+      parallaxSection.style.backgroundPositionY = `${scrollY * 0.5}px`;
+      parallaxSection.style.filter = `blur(${blurValue}px)`;  
+  } 
+  else {
+      parallaxSection.style.backgroundPositionY = '50%';
+      parallaxSection.style.filter = 'blur(5px)'; 
+  }
+});
