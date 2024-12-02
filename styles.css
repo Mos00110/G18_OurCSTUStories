@@ -373,11 +373,46 @@ input[type="color"] {
 #myjheading{
     text-align: center;
 }
-.myjcontainer{
-    border-radius: 8px;
+.myjcontainer {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: max-content;
+    margin-bottom: 50px;
+    font-size: 21px;
+    width: 50%;
+    border-radius: 16px;
     border: 3px solid rgb(38, 38, 14);
     padding: 20px;
+    position: relative;
+    line-height: 35px;
 }
+
+#yearContainer {
+    display: block;
+}
+.myjcontainer h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.myjcontainer button{
+    position: absolute;
+}
+#Next-Year{
+    top:0;
+    right:0;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#Previous-Year{
+    top:0;
+    left:0;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+/*--
 .myjdropdown {
     position: relative;
     display: inline-block;
@@ -427,5 +462,5 @@ input[type="color"] {
     opacity: 1;
     left: -10px;
 }
-
+--*/
 /*--------------------End-Our-Journey---------------------*/
