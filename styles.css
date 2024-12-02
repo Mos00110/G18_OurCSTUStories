@@ -514,3 +514,69 @@ input[type="color"] {
 }
 --*/
 /*--------------------End-Our-Journey---------------------*/
+/*-------------------------Our-Future--------------------------*/
+.allfuture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #67e1ff;
+    font-size: 30px;
+    text-align: center;
+}
+.futuresocool{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+.picoffuture{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.peopleforfuture1 ,.peopleforfuture2,.peopleforfuture3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 18px;
+    width: 50%;
+    left: 0;
+    margin-left: 250px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.peopleforfuture4,.peopleforfuture5,.peopleforfuture6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 18px;
+    right: 0;
+    width: 50%;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 200px;
+    margin-bottom: 40px;
+}
+.oneandfour{
+    display: flex;
+}
+.twoandfive{
+    display: flex;
+}
+.threeandsix{
+    display: flex;
+}
+.LEFTFUTURE{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    margin-left: 25px;    
+}
+.RIGHTFUTURE{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    margin-left: 25px;    
+}
+/*--------------------End-Our-Future---------------------*/
