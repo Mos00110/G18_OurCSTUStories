@@ -181,7 +181,6 @@
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    transition: opacity 0.3s ease;
     line-height: 40px;
 }
 #profile-imgleft , #profile-imgright{
