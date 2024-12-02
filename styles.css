@@ -501,6 +501,7 @@ input[type="color"] {
     background-color: #67e1ff;
     font-size: 30px;
     text-align: center;
+    padding: 15px;
 }
 .future-title {
     font-size: 100px;
@@ -690,6 +691,26 @@ input[type="color"] {
     .container img {
         max-width: 100%;
         height: auto;
+    }
+    .allfuture{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .oneandfour{
+        flex-direction: column;
+    }
+    .twoandfive{
+        flex-direction: column;
+    }
+    .threeandsix{
+        flex-direction: column;
+    }
+    .peopleforfuture1 ,.peopleforfuture2,.peopleforfuture3{
+        width: 90%;
+        margin-left: 40px;
+    }
+    .peopleforfuture4,.peopleforfuture5,.peopleforfuture6{
+        width: 90%;
     }
 }
 /*tablet แนวนอน*/
