@@ -73,11 +73,12 @@
 }
 .header{
     position: relative;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 0px;
-    background: transparent;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,10 +87,24 @@
 .topnav a{
     position: relative;
     font-size: 24px;
-    color: #ddd;
+    color: #000000;
     font-weight: 500;
     text-decoration: none;
     margin: 80px;
+}
+.topnav a.active{
+    position: relative;
+    font-size: 24px;
+    color: rgb(255, 124, 37);
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    text-decoration: none;
+    margin: 80px;
+}
+.topnav a:hover{
+    color: rgb(255, 124, 37);
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    transition: .3s ease;
 }
 .topnav a::before{
     content:'';
@@ -98,7 +113,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #ffffff;
+    background-color: rgb(255, 124, 37);
     transition: .3s;
 }
 .topnav a:hover::before{
@@ -106,7 +121,7 @@
 }
 .CSTU39{
     font-size: 40px;
-    color: #ddd;
+    color: #000000;
     text-decoration: none;
     font-weight: 700;
     margin-left: 60px;
@@ -423,46 +438,6 @@ input[type="color"] {
     border: none;
     background-color: white;
     cursor: pointer;
-}
-.header2{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 0px;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-}
-.topnav2 a{
-    position: relative;
-    font-size: 24px;
-    color: black;
-    font-weight: 500;
-    text-decoration: none;
-    margin: 80px;
-}
-.topnav2 a::before{
-    content:'';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: black;
-    transition: .3s;
-}
-.topnav2 a:hover::before{
-    width: 100%;
-}
-.CSTU392{
-    font-size: 40px;
-    color: black;
-    text-decoration: none;
-    font-weight: 700;
-    margin-left: 60px;
 }
 
 /*--
