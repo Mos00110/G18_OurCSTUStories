@@ -497,17 +497,26 @@ input[type="color"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #67e1ff;
+    background: linear-gradient(to bottom,white, #16d0ff);
     font-size: 30px;
     text-align: center;
 }
 .future-title {
     font-size: 100px;
     color: aliceblue;
-    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
+}
+p.future{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.123);
 }
 .onlyfuture{
     background: linear-gradient(to bottom,white, white, rgb(111, 86, 255), rgb(111, 86, 255));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: none;
@@ -515,12 +524,15 @@ input[type="color"] {
 .futuresocool{
     text-align: center;
     font-size: 40px;
-    margin-top: 50px;
+    padding: 50px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.178);
 }
 .picoffuture{
     width: 200px;
     height: 200px;
     border-radius: 100px;
+    border: #00000056 3px solid;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.178);
 }
 .peopleforfuture1 ,.peopleforfuture2,.peopleforfuture3{
     display: flex;
@@ -549,24 +561,47 @@ input[type="color"] {
 }
 .oneandfour{
     display: flex;
+    background-color: #93e9ff;
+    margin-bottom: 40px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.178);
+    border-radius: 5px;
 }
 .twoandfive{
     display: flex;
+    background-color: #93e9ff;
+    margin-bottom: 40px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.178);
+    border-radius: 5px;
 }
 .threeandsix{
     display: flex;
+    background-color: #93e9ff;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.178);
+    border-radius: 5px;
 }
 .LEFTFUTURE{
     display: flex;
     align-items: center;
     margin-right: 25px;
-    margin-left: 25px;    
+    margin-left: 25px; 
+    background-color: rgb(233, 252, 255);
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.178);
 }
 .RIGHTFUTURE{
     display: flex;
     align-items: center;
     margin-right: 25px;
     margin-left: 25px;    
+    background-color: rgb(233, 252, 255);
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.178);
+}
+.future-content{
+    margin: 20px;
+}
+section.future{
+    background-color: rgb(101, 224, 255);
 }
 /*--------------------End-Our-Future---------------------*/
 /*--------------------@Media screen----------------------*/
