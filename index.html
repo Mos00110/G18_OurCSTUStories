@@ -99,19 +99,19 @@
         </div>
     </section>
 
-        <div class="GUEST">
-            <form>
-                <p>สมุดเข้าเยี่ยม (guest books)</p>
-                <label for="First-name" id="First-name-TEXT">First Name:</label>
-                <label for="Last-name" id="Last-name-TEXT">Last Name:</label><br>
-                <input type="text" id="First-name" name="First-name" required>
-                <input type="text" id="Last-name" name="Last-name"><br>
-                <label for="Comment">Comment</label>
-                <input type="text" id="Comment" name="Comment" required>
-                <label for="color">Choose a Color:</label>
-                <input type="color" id="color" name="color">
-                <input type="submit" value="Submit">
-            </form>
+    <div class="GUEST">
+        <form class="GUESTFORM">
+            <p>สมุดเข้าเยี่ยม (guest books)</p>
+            <input type="text" id="First-name" name="First-name" placeholder="First name" required>
+            <input type="text" id="Last-name" name="Last-name" placeholder="Last name" required><br>
+            <textarea type="text" id="Comment" name="Comment" placeholder="Comment" required></textarea><br>
+            <label for="colorPicker">Choose a Background Color:</label>
+            <input type="color" id="colorPicker" name="color"><br>
+            <button type="button" onclick="Submitfunction()" id="Submitbut">Submit</button>
+        </form>
+    </div>
+        <div class="comments-container" id="commentsContainer">
+            <p><strong>Comments:</strong></p>
         </div>
     
 

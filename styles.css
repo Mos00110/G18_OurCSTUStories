@@ -256,17 +256,59 @@ form{
 }
 #First-name{
     margin-right: 15px;
-}
-#First-name-TEXT{
-    margin-right: 15px;
+    width: 200px;
 }
 #Last-name{
     margin-left: 15px;
+    width: 200px;
 }
-#Last-name-TEXT{
-    margin-left: 15px;
+#Comment{
+    font-size: 25px;
+    margin-top:40px;
+    width: 400px;
+    height: 200px;
 }
+.Commentpeople{
+    width: 300px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.CommentpeopleSection{
+    display: flex;
+    justify-content: center;
 
+}
+input[type="color"] {
+    margin-top: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#Submitbut{
+    cursor: pointer;
+}
+.comments-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; /* จัดให้อยู่กึ่งกลาง */
+}
+.GUEST{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.comment-card {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
 /*-------------------------End-index--------------------------*/
 
 /*-------------------------Our-journey--------------------------*/

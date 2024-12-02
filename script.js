@@ -65,3 +65,31 @@ window.addEventListener('scroll', () => {
       parallaxSection.style.filter = 'blur(5px)'; 
   }
 });
+function Submitfunction() {
+    const firstName = document.getElementById('First-name').value;
+    const lastName = document.getElementById('Last-name').value;
+    const comment = document.getElementById('Comment').value;
+    const colorPicker = document.getElementById('colorPicker').value;
+    const commentsContainer = document.getElementById('commentsContainer');
+
+    if (!firstName || !comment) {
+        alert('กรุณากรอกข้อมูลให้ครบถ้วน!');
+        return;
+    }
+
+    const commentCard = document.createElement('div');
+    commentCard.classList.add('comment-card');
+    commentCard.style.backgroundColor = colorPicker;
+    commentCard.innerHTML = `
+        <p><strong>${firstName} ${lastName}</strong></p>
+        <p>${comment}</p>
+    `;
+
+    commentsContainer.appendChild(commentCard);
+
+    // รีเซ็ตฟิลด์ข้อมูล
+    document.getElementById('First-name').value = '';
+    document.getElementById('Last-name').value = '';
+    document.getElementById('Comment').value = '';
+    document.getElementById('colorPicker').value = '#ffffff'; // ตั้งค่า default
+}
