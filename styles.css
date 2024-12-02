@@ -200,6 +200,7 @@
     border-radius: 30px;
     border: black 3px solid;
     box-shadow: 5px 5px 10px black;
+    margin-bottom: 0;
 }
 .profile-container {
     position: relative;
@@ -260,10 +261,13 @@
     transition: opacity 1.5s ease;
 }
 .GUEST{
-    background-color: rgba(133, 133, 255, 0.089);
     display: flex;
     justify-content: center;
     width: 100%;
+}
+.GUESTANDCOMMENT{
+    background-color: rgba(133, 133, 255, 0.089);
+    height: fit-content;
 }
 .GUESTFORM{
     text-align: start;
@@ -291,7 +295,6 @@
     linear-gradient(45deg, rgb(0, 140, 255), rgb(174, 0, 255)) border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 #Comment{
     all: unset;
     width: 200px;
