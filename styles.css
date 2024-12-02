@@ -342,12 +342,12 @@ input[type="color"] {
     border: 2px solid transparent;
     background: linear-gradient(45deg, rgb(195, 248, 255), rgb(182, 181, 255)) padding-box,
     linear-gradient(45deg, rgb(0, 140, 255), rgb(174, 0, 255)) border-box;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #Submitbut:active {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
-    transform: scale(0.98); /* Add a slight press effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(0.98);
 }
 .comments-container {
     margin-top: 20px;
@@ -356,7 +356,8 @@ input[type="color"] {
     gap: 10px;
     width: 100%;
     max-width: 600px;
-    margin: 20px auto; /* จัดให้อยู่กึ่งกลาง */
+    margin: 20px auto;
+    margin-bottom: 200px;
 }
 .comment-card {
     background-color: #f9f9f9;
@@ -405,13 +406,62 @@ input[type="color"] {
     right:0;
     margin-top: 20px;
     margin-right: 20px;
+    font-size: 35px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
 }
 #Previous-Year{
     top:0;
     left:0;
     margin-top: 20px;
     margin-left: 20px;
+    font-size: 35px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
 }
+.header2{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.topnav2 a{
+    position: relative;
+    font-size: 24px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 80px;
+}
+.topnav2 a::before{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: .3s;
+}
+.topnav2 a:hover::before{
+    width: 100%;
+}
+.CSTU392{
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 60px;
+}
+
 /*--
 .myjdropdown {
     position: relative;
