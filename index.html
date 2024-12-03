@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G18's CSTU Stories</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="dropdown"> <!-- display when users in phone or tablet -->
-        <button onclick="myFunction()" class="dropbtn">≡</button>
-        <div id="myDropdown" class="dropdown-content" style="top:0px">
-        <img src="resourse/IMG1.jpg">
-        </div>
-    </div>
-    <!-- ผมว่าแบบนี้ส่วนหัวตรงนี้workกว่า เพราะแบบโครงสร้างมันโอเคกว่า ส่วนreponsiveโทรศัพท์ใช้ตามแบบ-->
+    
      <header class="header">
         <a href = "index.html" class="CSTU39">CSTU Stories 💻</a>
         <nav class="topnav" id="myTopnav"> 
@@ -25,11 +21,13 @@
 
     <section class="slider">
         </div>
-        <div class="picandquacontainer" >
-            <div class="picandqua" id="head-img">
-                <img id="carouselImage" src="resourse/g18.png" alt="Image 1">
-                <button class="before-btn" onclick="changePreviousImage()"> < </button>
-                <button class="next-btn" onclick="changeNextImage()"> > </button>
+        <div class="slider-container" >
+
+            <div class="carouselImage" id="head-img">
+                <img id="carImg" src="resourse/FullG18.png" alt="Image 1">
+                <img id="carImg" src="resourse/FullG18SoChill2.png" alt="Image 2">
+                <img id="carImg" src="resourse/FullG18SoChill3.png" alt="Image 3">
+                <img id="carImg" src="resourse/G18FeatChillGuy.png" alt="Image 4">
                 <!-- <div class="quote" style="margin-left:40px; margin-right: 40px;">"ทุกความฝันของเราสามารถเป็นจริงได้ ถ้าเรากล้าไล่ตามมัน   - วอลต์ ดิสนีย์"</div> -->
             </div>
         </div>
@@ -117,6 +115,9 @@
     </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js" integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="script.js" defer></script>
 </body>
 </html>

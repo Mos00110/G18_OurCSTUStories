@@ -7,6 +7,9 @@
     font-family: "Kanit", serif;;
 }
 /*-------------------------Our-index--------------------------*/
+body{
+    background-color: rgb(234, 234, 255);
+}
 .dropdown {
     position: absolute;
     display: inline-block;
@@ -127,14 +130,18 @@
     margin-left: 60px;
     cursor: default;
 }
-
-.picandquacontainer{
+.slider{
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    background: linear-gradient(white,rgb(0, 0, 0));
+}
+.slider-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(black, white);
 }
-.picandqua{
+
+.carouselImage{
     display: flex;
     align-items: center;
     text-align: center;
@@ -148,10 +155,7 @@
     line-height: 60px;
     font-family: "Bai Jamjuree", sans-serif;
 }
-#carouselImage{
-    width: 100%;
-    max-width: 1280px;
-    height: 100%;
+#carImg{
     background-size: cover;
     background-position: center;
     display: flex;
@@ -159,53 +163,20 @@
     justify-content: center;
     position: relative;
     border-radius: 5px;
-    transition: opacity 1s ease-in-out;
-}
-.before-btn,.next-btn{
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.2s ease-in-out;
-}
-.before-btn:hover,
-.next-btn:hover {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-.before-btn {
-    position: absolute;
-    left: 50px;
 }
 
-.next-btn {
-    position: absolute;
-    right: 50px;
-}
 .introduction{
     font-family: "Kanit", serif;;
     background: linear-gradient(to bottom, #ffffff, #67e1ff, rgb(133, 133, 255));
+    padding-bottom: 100px;
 }
 
 .allpeople{
     text-align: center;
     align-content: center;
-    margin-top: 50px;
     font-size: 40px;
     font-family: "Kanit", serif;
-    background-color: #ffffff;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.192);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.192);
     height: 150px;
 }
 .twopeople{
@@ -282,7 +253,7 @@
     width: 100%;
 }
 .GUESTANDCOMMENT{
-    background-color: rgba(133, 133, 255, 0.089);
+    background-color: rgb(234, 234, 255);
     height: fit-content;
 }
 .GUESTFORM{
@@ -390,15 +361,29 @@ input[type="color"] {
 /*-------------------------End-index--------------------------*/
 
 /*-------------------------Our-journey--------------------------*/
-#myjheading{
+
+.journey{
+    font-size: 100px;
     text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
 }
-.myjcontainer {
+.onlyjourney{
+    background: linear-gradient(to bottom,rgb(98, 63, 255), rgb(57, 232, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.year{
+    background-color: rgba(27, 141, 255, 0.247);
     display: block;
     margin: 0 auto;
     margin-top: 50px;
     height: max-content;
     margin-bottom: 50px;
+    margin-left: 0;
+    margin-right: 0;
     font-size: 21px;
     width: 50%;
     border-radius: 16px;
@@ -407,91 +392,38 @@ input[type="color"] {
     position: relative;
     line-height: 35px;
 }
-
-#yearContainer {
-    display: block;
-}
-.myjcontainer h2{
+.year h2{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 40px;
 }
-.myjcontainer button{
-    position: absolute;
-}
-#Next-Year{
-    top:0;
-    right:0;
-    margin-top: 20px;
-    margin-right: 20px;
-    font-size: 35px;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-}
-#Previous-Year{
-    top:0;
-    left:0;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 35px;
-    border: none;
-    background-color: white;
-    cursor: pointer;
+.year-descrip p{
+    margin: 20px;
 }
 
-/*--
-.myjdropdown {
-    position: relative;
-    display: inline-block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 10;
-}
-
-.myjdropdown-btn {
-    background-color: #007bff;
+#next-arrow,#prev-arrow{
+    background-color: #0a1b2798;
     color: white;
-    padding: 10px 15px;
-    font-size: 18px;
     border: none;
+    padding: 10px 15px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 100px;
+    font-size: 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+#prev-arrow:hover, #next-arrow:hover {
+    background-color: #2980b9;
 }
 
-.myjdropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    right: 0;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-    border-radius: 4px;
+.container-year{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.myjdropdown-menu li {
-    padding: 8px;
-    text-align: left;
-}
-.myjdropdown-menu li:hover {
-    background-color: #ddd;
-}
-.myjdropdown-menu li a {
-    text-decoration: none;
-    color: black;
-}
-.myjdropdown-menu li a:hover::before {
-    content: ">>";
-    opacity: 1;
-    left: -10px;
-}
---*/
 /*--------------------End-Our-Journey---------------------*/
 /*-------------------------Our-Future--------------------------*/
 .allfuture{
@@ -501,7 +433,6 @@ input[type="color"] {
     background: linear-gradient(to bottom,white, #16d0ff);
     font-size: 30px;
     text-align: center;
-    padding: 15px;
 }
 .future-title {
     font-size: 100px;
@@ -527,6 +458,7 @@ p.future{
     text-align: center;
     font-size: 40px;
     padding: 50px;
+    background-color: #f5feff;
     box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.178);
 }
 .picoffuture{
@@ -536,7 +468,7 @@ p.future{
     border: #00000056 3px solid;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.178);
 }
-.peopleforfuture1 ,.peopleforfuture2,.peopleforfuture3{
+.peopleforfutureL{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -548,7 +480,7 @@ p.future{
     margin-right: 40px;
     margin-bottom: 40px;
 }
-.peopleforfuture4,.peopleforfuture5,.peopleforfuture6{
+.peopleforfutureR{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -561,27 +493,21 @@ p.future{
     margin-right: 200px;
     margin-bottom: 40px;
 }
-.oneandfour{
+.oneandfour,.twoandfive{
     display: flex;
     background-color: #93e9ff;
     margin-bottom: 40px;
     box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.178);
     border-radius: 5px;
 }
-.twoandfive{
-    display: flex;
-    background-color: #93e9ff;
-    margin-bottom: 40px;
-    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.178);
-    border-radius: 5px;
-}
+
 .threeandsix{
     display: flex;
     background-color: #93e9ff;
     box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.178);
     border-radius: 5px;
 }
-.LEFTFUTURE{
+.LEFTFUTURE,.RIGHTFUTURE{
     display: flex;
     align-items: center;
     margin-right: 25px;
@@ -590,18 +516,11 @@ p.future{
     border-radius: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.178);
 }
-.RIGHTFUTURE{
-    display: flex;
-    align-items: center;
-    margin-right: 25px;
-    margin-left: 25px;    
-    background-color: rgb(233, 252, 255);
-    border-radius: 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.178);
-}
+
 .future-content{
     margin: 20px;
 }
+
 section.future{
     background-color: rgb(101, 224, 255);
 }
