@@ -590,6 +590,24 @@ section.future{
     .myjcontainer {
         font-size: 16px;
     }
+    .year h2{
+        font-size: 30px;
+    }
+    .year-descrip{
+        font-size: 16px;
+    }
+    .journey{
+        font-size: 70px;
+    }
+    .future-title{
+        font-size: 70px;
+    }
+    p.future{
+        font-size: 16px;
+    }
+    p.futureB{
+        font-size: 18px;
+    }
 }
 
 /* Responsive for Mobile: 360x640 */
@@ -680,6 +698,7 @@ section.future{
     .peopleforfuture4,.peopleforfuture5,.peopleforfuture6{
         width: 90%;
     }
+    
 }
 /*tablet แนวนอน*/
 @media screen and (min-width: 1024px) and (max-width: 1366px) and (min-height: 768px) and (max-height: 1024px) { 
@@ -716,4 +735,5 @@ section.future{
     .peopleforfuture1, .peopleforfuture2, .peopleforfuture3 {
         margin-left: 100px;
     }
+    
 }
