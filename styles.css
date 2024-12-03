@@ -636,6 +636,9 @@ section.future{
     p.futureB{
     font-size: 18px;
     }
+    .allfuture{
+        padding: 20px;
+    }
 }
 
 /* Responsive for Mobile: 360x640 */
@@ -791,5 +794,4 @@ section.future{
     .peopleforfutureL {
         margin-left: 100px;
     }
-    
 }
