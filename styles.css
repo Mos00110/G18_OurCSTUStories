@@ -95,6 +95,14 @@ body{
     text-decoration: none;
     margin: 80px;
 }
+.topnav a.nonactive{
+    position: relative;
+    font-size: 24px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0px;
+}
 .topnav a.active{
     position: relative;
     font-size: 24px;
@@ -102,7 +110,7 @@ body{
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
     font-weight: 500;
     text-decoration: none;
-    margin: 80px;
+    margin: 0px;
 }
 .topnav a:hover{
     color: rgb(255, 124, 37);
@@ -696,8 +704,17 @@ section.future{
         transition: opacity 1.5s ease;
         font-size: 8px;
     }
+    .topnav{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
     .topnav a {
         margin-left: 110px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
     }
     header {
         flex-direction: column;
