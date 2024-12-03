@@ -608,6 +608,9 @@ section.future{
 /*--------------------End-Our-Future---------------------*/
 /*--------------------@Media screen----------------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 1366px) {
+    .peopleforfuture4, .peopleforfuture5, .peopleforfuture6 {
+        margin-left: 0px;
+    }
     .container {
         padding: 15px;
         background-color: #e0f7fa;
@@ -659,7 +662,7 @@ section.future{
         width: 50%;
         left: 0;
         margin-left: 0px;
-        margin-right: 40px;
+        margin-right: 20px;
         margin-bottom: 40px;
     }
     .LEFTFUTURE,.RIGHTFUTURE{
@@ -672,6 +675,17 @@ section.future{
 
 /* Responsive for Mobile: 360x640 */
 @media screen and (max-width: 640px) and (max-height: 800px) {
+    .GUESTFORM{
+        font-size: 10px;
+        margin-left: 60px;
+    }
+    #Comment{
+        width: 200px;
+    }
+    .GUESTBOOK{
+        font-size: 10px;
+        margin-left: 30px;
+    }
     .myjcontainer {
         font-size: 14px;
     }
@@ -779,5 +793,8 @@ section.future{
         transform: translate(-70%, -55%);
         transition: opacity 1.5s ease;
         font-size: 15px;
+    }
+    .peopleforfuture1, .peopleforfuture2, .peopleforfuture3 {
+        margin-left: 100px;
     }
 }
