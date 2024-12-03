@@ -526,7 +526,7 @@ section.future{
 }
 /*--------------------End-Our-Future---------------------*/
 /*--------------------@Media screen----------------------*/
-@media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 1366px) {
+@media screen and (min-width: 768px) and (max-width: 1024px){
     .peopleforfuture4, .peopleforfuture5, .peopleforfuture6 {
         margin-left: 0px;
     }
@@ -610,24 +610,24 @@ section.future{
     p.futureB{
         font-size: 18px;
     }
-}
-.year h2{
+    .year h2{
     font-size: 30px;
-}
-.year-descrip{
+    }
+    .year-descrip{
     font-size: 16px;
-}
-.journey{
+    }
+    .journey{
     font-size: 70px;
-}
-.future-title{
+    }
+    .future-title{
     font-size: 70px;
-}
-p.future{
+    }
+    p.future{
     font-size: 16px;
-}
-p.futureB{
+    }
+    p.futureB{
     font-size: 18px;
+    }
 }
 
 
